@@ -1,10 +1,8 @@
-# 🤖 Advanced Investment Advisor AI
+# Advanced Investment Advisor AI
 
 An advanced multi-agent AI system that acts as a personal investment advisor. It automatically researches company news, retrieves financial data, analyses everything, and delivers actionable investment advice — all powered by GPT-4.1.
 
----
-
-## 💡 What It Does
+## What It Does
 
 Give it a company name and it will:
 1. **Search for the latest company news**
@@ -12,9 +10,7 @@ Give it a company name and it will:
 3. **Analyse** all the gathered information
 4. **Give you investment advice** based on the full analysis
 
----
-
-## 🧠 System Architecture
+## System Architecture
 
 The system uses **4 specialized AI agents** working in a pipeline:
 
@@ -25,7 +21,7 @@ The system uses **4 specialized AI agents** working in a pipeline:
 | Agent 3 | Analyst | Analyse data from Agent 1 & 2 | — |
 | Agent 4 | Financial Expert | Deliver investment advice | `get_current_stock_price` |
 
-### ⚡ Execution Flow
+### Execution Flow
 ```
 Agent 1 ─┐
           ├──► Agent 3 (Analyst) ──► Agent 4 (Advisor) ──► Final Result
@@ -33,23 +29,19 @@ Agent 2 ─┘
 ```
 Agent 1 and Agent 2 run **in parallel** to save time, then Agent 3 analyses their combined output, and finally Agent 4 delivers the advice.
 
-### 🤔 Why Use Agents Instead of a Simple Web Search?
+### Why Use Agents Instead of a Simple Web Search?
 - Web search alone is unreliable and hard to automate
 - Agents reduce the risk of hallucination by grounding responses in real data
 - Parallel execution makes the system fast and efficient
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** Python
 - **LLM:** GPT-4.1 (used across all agents)
 - **Framework:** CrewAI
 - **API Server:** FastAPI
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 advanced/
@@ -63,9 +55,7 @@ advanced/
 └── minimal_parallel_tutorial.py  # Tutorial demonstrating parallel agent execution
 ```
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -95,7 +85,7 @@ python start_server.py
 
 ---
 
-## 📖 What I Learned
+## What I Learned
 
 - How to design and architect a **multi-agent AI system** from scratch
 - Why agents are more reliable than direct LLM queries for research tasks
