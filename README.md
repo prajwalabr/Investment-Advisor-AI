@@ -83,16 +83,12 @@ python main.py
 python start_server.py
 ```
 
----
-
 ## What I Learned
 
 - How to design and architect a **multi-agent AI system** from scratch
 - Why agents are more reliable than direct LLM queries for research tasks
 - How to structure agent pipelines with **parallel execution** for efficiency
 - How to expose an AI system as a **REST API** using FastAPI
-
----
 
 ## 👤 Author
 
